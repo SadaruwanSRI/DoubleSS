@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadaruwan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/32123e2356.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div id="progress">
+        <span id="progress-value"><i class="fa-solid fa-chevron-up"></i></span>
+    </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>I know something useful beyond numbers!</p>
+                <h1>Hi, I'm <span>Sadaruwan</span></h1>
+                <div class="wrapper">
+                    <div class="static-txt">I'm a</div>
+                    <ul class="dynamic-txts">
+                        <li><span>DataScientist</span></li>
+                        <li><span>Data Analyst</span></li>
+                        <li><span>Problem solver</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------about------------------>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! <br>
+                        Hello, I'm Sadaruwan, and I am passionate about data science and machine learning. As a beginner, I have great confidence about my knowledge and I'm wondering how to use my knowledge to help 
+                        people. Mainly I am good at Data Visualization using Python Matplotlib and custom interactive dashboards using the Dash package. I know how to deal with big data sets and get useful insights
+                         through the data to achieve business goals or solve problems. Mostly I work with Python but my toolbox has a lot of tools for doing the EDA process such as R, Power BI, Tabular, Excel, and
+                          many more then use machine learning models, and deep learning to understand the patterns of the data. So this process is like an adventure! Lets! find the hidden treasure from data.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python <i class="fa-brands fa-python"></i></span><br>Python is a very useful tool for data analysis and machine learning.Python has already implemented awsome packages and 
+                            python has huge community support so it's really helps for do a heavy task.Mostly I use python for clean the data and making complex graphs.</li>
+                            <li><span>R programming language <i class="fa-brands fa-r-project"></i></span><br>R also a great tool and capable with working with big data so I use R for most of difficult tasks because R is already design for mathematical computation.</li>
+                            <li><span>Tableau <i class="fa-solid fa-table"></i></span><br>As a person who working with data should know about at least one BI tool, Tableau is a great BI tool and user can design awosome Visualization dashboards.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Self-employed</span><br>---------</li>
+                            <li><span>Self-employed</span><br>---------</li>
+                            <li><span>Self-employed</span><br>---------</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - now</span><br>Undergraduate student in University of ruhuna Sri Lanka. <br>
+                            </li>
+                            <li><span>2020</span><br>G.C.E Advanced level</li>
+                            <li><span>2016</span><br>G.C.E. Ordinary level</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Skills view----------------->
+    <div class="container">
+        <div class="skill-list">
+        <div class="card">
+            <div class="rating">
+                <h2><span class="counter1" data-target="72">72 </span><sup>%</sup><br><i class="fa-brands fa-python"></i></h2>
+                <div class="block1"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="rating">
+                <h2><span class="counter2" data-target="60">60 </span><sup>%</sup><br><i class="fa-brands fa-r-project"></i></h2>
+                <div class="block2"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="rating">
+                <h2><span class="counter3" data-target="64">64 </span><sup>%</sup><br><i class="fa-solid fa-database"></i></h2>
+                <div class="block3"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="rating">
+                <h2><span class="counter4" data-target="72">72 </span><sup>%</sup><br><i class="fa-solid fa-file-excel"></i></h2>
+                <div class="block4"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------services--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+
+                    <i class="fa-solid fa-broom"></i>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Data Processing</h2>
+                    <p>In this process we first do Fixing or removing incorrect,corrupted, incorrectly formated, duplicate, or in complete data within dataset.
+                        and then 
+                        </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-searchengin"></i>
+                    <i class="fa-brands fa-mixer"></i>
+                    <h2>Mash-up and Explore</h2>
+                    <p>this stage is the modeling stage, after precess the data we ready for building machine learnning models and discover hidden pattern of the data.
+                        then we use these models for solve the problems. </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Present</h2>
+                    <p>
+                        Lastly we Create awosome graphics for show the results who hasn't enough knowledge about the data and 
+                        explain the situation and guide for decision making and problem solving.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="w1">
+                    <img src="images/work-11.jpg" alt="w1">
+                    <div class="layer">
+                        <h3>Image Classifier</h3>
+                        <p>This application can identify specific pattern in a photo and identify the object
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="w1">
+                    <img src="images/work-22.png" alt="w1">
+                    <div class="layer">
+                        <h3>ML model for predict the market prices</h3>
+                        <p>
+                            This application can identify market trends and accurately predict future prices.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpeg" alt="w1">
+                    <div class="layer">
+                        <h3>Wheather Forcaset</h3>
+                        <p>Use google data for train a ML model and predict the current whether with high accuracy.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------contact------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sriyantha1234567890@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0762875859</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="meassage" rows="6" placeholder="Your Meassage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> Sadaruwan. DoubleS.</p>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right='-200px';
+        
+    }
+</script>
+<script src="script.js"></script>
+    
+</body>
+</html>
